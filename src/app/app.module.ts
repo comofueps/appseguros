@@ -7,12 +7,6 @@ import { HeaderComponent } from './components/layout/header/header.component';
 import { ContentComponent } from './components/layout/content/content.component';
 import { AsideComponent } from './components/layout/aside/aside.component';
 import { FooterComponent } from './components/layout/footer/footer.component';
-
-// Modulos
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { BrowserModule } from '@angular/platform-browser';
-import { PanelMenuModule } from 'primeng/panelmenu';
-import { TableModule } from 'primeng/table';
 import { ListPersonaComponent } from './components/personas/list-persona/list-persona.component';
 import { AddPersonaComponent } from './components/personas/add-persona/add-persona.component';
 import { DeletePersonaComponent } from './components/personas/delete-persona/delete-persona.component';
@@ -33,7 +27,15 @@ import { ListMultasComponent } from './components/multas/list-multas/list-multas
 import { AddMultasComponent } from './components/multas/add-multas/add-multas.component';
 import { DeleteMultasComponent } from './components/multas/delete-multas/delete-multas.component';
 import { UpdateMultasComponent } from './components/multas/update-multas/update-multas.component';
+import { MenuAuxiliarComponent } from './components/menu-auxiliar/menu-auxiliar.component';
 
+
+// Modulos
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BrowserModule } from '@angular/platform-browser';
+import { PanelMenuModule } from 'primeng/panelmenu';
+import { TableModule } from 'primeng/table';
+import { MenubarModule } from 'primeng/menubar';
 
 @NgModule({
   declarations: [
@@ -61,14 +63,16 @@ import { UpdateMultasComponent } from './components/multas/update-multas/update-
     ListMultasComponent,
     AddMultasComponent,
     DeleteMultasComponent,
-    UpdateMultasComponent
+    UpdateMultasComponent,
+    MenuAuxiliarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     PanelMenuModule,
-    TableModule
+    TableModule,
+    MenubarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
