@@ -1,16 +1,19 @@
-<p-table [value]="involucrados" [tableStyle]="{ 'min-width': '50rem' }">
-    <ng-template pTemplate="header">
-        <tr>
-            <th>Hora</th>
-            <th>Matricula</th>
-            <th>DNI</th>
-        </tr>
-    </ng-template>
-    <ng-template pTemplate="body" let-involucrado>
-        <tr>
-            <td>{{ involucrado.hora }}</td>
-            <td>{{ involucrado.matricula }}</td>
-            <td>{{ involucrado.dni }}</td>
-        </tr>
-    </ng-template>
-</p-table>
+<app-menu-auxiliar rutaDeseada="/involucrar"></app-menu-auxiliar>
+<div>
+    <p-table [value]="involucrados" [tableStyle]="{ 'min-width': '50rem' }">
+        <ng-template pTemplate="header">
+            <tr>
+                <th>Hora</th>
+                <th>Matricula</th>
+                <th>DNI</th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-involucrado>
+            <tr>
+                <td>{{ involucrado.hora }}</td>
+                <td>{{ involucrado.matricula }}</td>
+                <td>{{ involucrado.dni }}</td>
+            </tr>
+        </ng-template>
+    </p-table>
+</div>

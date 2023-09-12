@@ -1,20 +1,23 @@
+<app-menu-auxiliar rutaDeseada="/multas"></app-menu-auxiliar>
+<div>
+    <p-table [value]="multas" [tableStyle]="{ 'min-width': '50rem' }">
+        <ng-template pTemplate="header">
+            <tr>
+                <th>DNI</th>
+                <th>Consecutivo de multas</th>
+                <th>Fecha y hora</th>
+                <th>Lugar de la infraccion </th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-multa>
+            <tr>
+                <td>{{ multa.dni }}</td>
+                <td>{{ multa.consecutivoMultas }}</td>
+                <td>{{ multa.fechayhora}}</td>
+                <td>{{ multa.lugarInfraccion }}</td>
+    
+            </tr>
+        </ng-template>
+    </p-table>
+</div>
 
-<p-table [value]="multas" [tableStyle]="{ 'min-width': '50rem' }">
-    <ng-template pTemplate="header">
-        <tr>
-            <th>DNI</th>
-            <th>Consecutivo de multas</th>
-            <th>Fecha y hora</th>
-            <th>Lugar de la infraccion </th>
-        </tr>
-    </ng-template>
-    <ng-template pTemplate="body" let-multa>
-        <tr>
-            <td>{{ multa.dni }}</td>
-            <td>{{ multa.consecutivoMultas }}</td>
-            <td>{{ multa.fechayhora}}</td>
-            <td>{{ multa.lugarInfraccion }}</td>
-
-        </tr>
-    </ng-template>
-</p-table>
