@@ -72,7 +72,7 @@ import { MenubarModule } from 'primeng/menubar';
     BrowserAnimationsModule,
     PanelMenuModule,
     TableModule,
-    MenubarModule
+    MenubarModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

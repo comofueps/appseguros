@@ -5,6 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: './add-involucrar.component.html',
   styleUrls: ['./add-involucrar.component.css']
 })
-export class AddInvolucrarComponent {
 
+export class AddInvolucrarComponent {
+  
 }
